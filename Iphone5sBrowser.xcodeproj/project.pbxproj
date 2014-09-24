@@ -12,6 +12,11 @@
 		B0B4DA3719D2F2170057010D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B4DA3519D2F2170057010D /* Main.storyboard */; };
 		B0B4DA3919D2F2170057010D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B4DA3819D2F2170057010D /* Images.xcassets */; };
 		B0B4DA4519D2F2170057010D /* Iphone5sBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4DA4419D2F2170057010D /* Iphone5sBrowserTests.swift */; };
+		B0B4DA4F19D30B600057010D /* iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B4DA4E19D30B600057010D /* iphone.png */; };
+		B0B4DA5119D30F340057010D /* iphone-nobg.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B4DA5019D30F340057010D /* iphone-nobg.png */; };
+		B0B4DA5519D311370057010D /* iphone-wireframe.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B4DA5219D311370057010D /* iphone-wireframe.png */; };
+		B0B4DA5619D311370057010D /* iphone-white.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B4DA5319D311370057010D /* iphone-white.png */; };
+		B0B4DA5919D31A400057010D /* iphone-black.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B4DA5819D31A400057010D /* iphone-black.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,11 @@
 		B0B4DA3E19D2F2170057010D /* Iphone5sBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Iphone5sBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B4DA4319D2F2170057010D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0B4DA4419D2F2170057010D /* Iphone5sBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iphone5sBrowserTests.swift; sourceTree = "<group>"; };
+		B0B4DA4E19D30B600057010D /* iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone.png; sourceTree = "<group>"; };
+		B0B4DA5019D30F340057010D /* iphone-nobg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-nobg.png"; sourceTree = "<group>"; };
+		B0B4DA5219D311370057010D /* iphone-wireframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-wireframe.png"; sourceTree = "<group>"; };
+		B0B4DA5319D311370057010D /* iphone-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-white.png"; sourceTree = "<group>"; };
+		B0B4DA5819D31A400057010D /* iphone-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-black.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +97,11 @@
 		B0B4DA2F19D2F2170057010D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B0B4DA5219D311370057010D /* iphone-wireframe.png */,
+				B0B4DA5319D311370057010D /* iphone-white.png */,
+				B0B4DA5819D31A400057010D /* iphone-black.png */,
+				B0B4DA4E19D30B600057010D /* iphone.png */,
+				B0B4DA5019D30F340057010D /* iphone-nobg.png */,
 				B0B4DA3019D2F2170057010D /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -189,7 +204,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0B4DA5919D31A400057010D /* iphone-black.png in Resources */,
+				B0B4DA5519D311370057010D /* iphone-wireframe.png in Resources */,
+				B0B4DA5119D30F340057010D /* iphone-nobg.png in Resources */,
+				B0B4DA5619D311370057010D /* iphone-white.png in Resources */,
 				B0B4DA3719D2F2170057010D /* Main.storyboard in Resources */,
+				B0B4DA4F19D30B600057010D /* iphone.png in Resources */,
 				B0B4DA3919D2F2170057010D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,8 +346,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Iphone5sBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -337,8 +359,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Iphone5sBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
