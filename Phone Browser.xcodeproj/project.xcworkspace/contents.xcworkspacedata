@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Iphone5sBrowser.xcodeproj">
+      location = "self:Phone Browser.xcodeproj">
    </FileRef>
 </Workspace>

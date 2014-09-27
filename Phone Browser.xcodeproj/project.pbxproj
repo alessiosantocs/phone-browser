@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B01F650719D5B7BC00B2BD3C /* phone-browser-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F650619D5B7BC00B2BD3C /* phone-browser-logo.png */; };
+		B04EBE7319D446F100488024 /* iphone-black.png in Resources */ = {isa = PBXBuildFile; fileRef = B04EBE7019D446F100488024 /* iphone-black.png */; };
+		B04EBE7419D446F100488024 /* iphone-white.png in Resources */ = {isa = PBXBuildFile; fileRef = B04EBE7119D446F100488024 /* iphone-white.png */; };
+		B04EBE7519D446F100488024 /* iphone-wireframe.png in Resources */ = {isa = PBXBuildFile; fileRef = B04EBE7219D446F100488024 /* iphone-wireframe.png */; };
 		B0B4DA3219D2F2170057010D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4DA3119D2F2170057010D /* AppDelegate.swift */; };
 		B0B4DA3419D2F2170057010D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4DA3319D2F2170057010D /* ViewController.swift */; };
 		B0B4DA3719D2F2170057010D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B4DA3519D2F2170057010D /* Main.storyboard */; };
@@ -14,9 +18,7 @@
 		B0B4DA4519D2F2170057010D /* Iphone5sBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4DA4419D2F2170057010D /* Iphone5sBrowserTests.swift */; };
 		B0B4DA4F19D30B600057010D /* iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B4DA4E19D30B600057010D /* iphone.png */; };
 		B0B4DA5119D30F340057010D /* iphone-nobg.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B4DA5019D30F340057010D /* iphone-nobg.png */; };
-		B0B4DA5519D311370057010D /* iphone-wireframe.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B4DA5219D311370057010D /* iphone-wireframe.png */; };
-		B0B4DA5619D311370057010D /* iphone-white.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B4DA5319D311370057010D /* iphone-white.png */; };
-		B0B4DA5919D31A400057010D /* iphone-black.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B4DA5819D31A400057010D /* iphone-black.png */; };
+		B0B4DA5B19D327940057010D /* LauncherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4DA5A19D327940057010D /* LauncherController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +32,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B0B4DA2C19D2F2170057010D /* Iphone5sBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iphone5sBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B01F650619D5B7BC00B2BD3C /* phone-browser-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone-browser-logo.png"; sourceTree = "<group>"; };
+		B04EBE7019D446F100488024 /* iphone-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-black.png"; sourceTree = "<group>"; };
+		B04EBE7119D446F100488024 /* iphone-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-white.png"; sourceTree = "<group>"; };
+		B04EBE7219D446F100488024 /* iphone-wireframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-wireframe.png"; sourceTree = "<group>"; };
+		B0B4DA2C19D2F2170057010D /* Phone Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phone Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B4DA3019D2F2170057010D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0B4DA3119D2F2170057010D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0B4DA3319D2F2170057010D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B0B4DA3619D2F2170057010D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0B4DA3819D2F2170057010D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B0B4DA3E19D2F2170057010D /* Iphone5sBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Iphone5sBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B4DA3E19D2F2170057010D /* Phone BrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Phone BrowserTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B4DA4319D2F2170057010D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0B4DA4419D2F2170057010D /* Iphone5sBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iphone5sBrowserTests.swift; sourceTree = "<group>"; };
 		B0B4DA4E19D30B600057010D /* iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone.png; sourceTree = "<group>"; };
 		B0B4DA5019D30F340057010D /* iphone-nobg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-nobg.png"; sourceTree = "<group>"; };
-		B0B4DA5219D311370057010D /* iphone-wireframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-wireframe.png"; sourceTree = "<group>"; };
-		B0B4DA5319D311370057010D /* iphone-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-white.png"; sourceTree = "<group>"; };
-		B0B4DA5819D31A400057010D /* iphone-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-black.png"; sourceTree = "<group>"; };
+		B0B4DA5A19D327940057010D /* LauncherController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LauncherController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +80,8 @@
 		B0B4DA2D19D2F2170057010D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B0B4DA2C19D2F2170057010D /* Iphone5sBrowser.app */,
-				B0B4DA3E19D2F2170057010D /* Iphone5sBrowserTests.xctest */,
+				B0B4DA2C19D2F2170057010D /* Phone Browser.app */,
+				B0B4DA3E19D2F2170057010D /* Phone BrowserTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +91,7 @@
 			children = (
 				B0B4DA3119D2F2170057010D /* AppDelegate.swift */,
 				B0B4DA3319D2F2170057010D /* ViewController.swift */,
+				B0B4DA5A19D327940057010D /* LauncherController.swift */,
 				B0B4DA3519D2F2170057010D /* Main.storyboard */,
 				B0B4DA3819D2F2170057010D /* Images.xcassets */,
 				B0B4DA2F19D2F2170057010D /* Supporting Files */,
@@ -97,12 +102,13 @@
 		B0B4DA2F19D2F2170057010D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B0B4DA5219D311370057010D /* iphone-wireframe.png */,
-				B0B4DA5319D311370057010D /* iphone-white.png */,
-				B0B4DA5819D31A400057010D /* iphone-black.png */,
+				B04EBE7019D446F100488024 /* iphone-black.png */,
+				B04EBE7119D446F100488024 /* iphone-white.png */,
+				B04EBE7219D446F100488024 /* iphone-wireframe.png */,
 				B0B4DA4E19D30B600057010D /* iphone.png */,
 				B0B4DA5019D30F340057010D /* iphone-nobg.png */,
 				B0B4DA3019D2F2170057010D /* Info.plist */,
+				B01F650619D5B7BC00B2BD3C /* phone-browser-logo.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -127,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B0B4DA2B19D2F2160057010D /* Iphone5sBrowser */ = {
+		B0B4DA2B19D2F2160057010D /* Phone Browser */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0B4DA4819D2F2170057010D /* Build configuration list for PBXNativeTarget "Iphone5sBrowser" */;
+			buildConfigurationList = B0B4DA4819D2F2170057010D /* Build configuration list for PBXNativeTarget "Phone Browser" */;
 			buildPhases = (
 				B0B4DA2819D2F2160057010D /* Sources */,
 				B0B4DA2919D2F2160057010D /* Frameworks */,
@@ -139,14 +145,14 @@
 			);
 			dependencies = (
 			);
-			name = Iphone5sBrowser;
+			name = "Phone Browser";
 			productName = Iphone5sBrowser;
-			productReference = B0B4DA2C19D2F2170057010D /* Iphone5sBrowser.app */;
+			productReference = B0B4DA2C19D2F2170057010D /* Phone Browser.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B0B4DA3D19D2F2170057010D /* Iphone5sBrowserTests */ = {
+		B0B4DA3D19D2F2170057010D /* Phone BrowserTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0B4DA4B19D2F2170057010D /* Build configuration list for PBXNativeTarget "Iphone5sBrowserTests" */;
+			buildConfigurationList = B0B4DA4B19D2F2170057010D /* Build configuration list for PBXNativeTarget "Phone BrowserTests" */;
 			buildPhases = (
 				B0B4DA3A19D2F2170057010D /* Sources */,
 				B0B4DA3B19D2F2170057010D /* Frameworks */,
@@ -157,9 +163,9 @@
 			dependencies = (
 				B0B4DA4019D2F2170057010D /* PBXTargetDependency */,
 			);
-			name = Iphone5sBrowserTests;
+			name = "Phone BrowserTests";
 			productName = Iphone5sBrowserTests;
-			productReference = B0B4DA3E19D2F2170057010D /* Iphone5sBrowserTests.xctest */;
+			productReference = B0B4DA3E19D2F2170057010D /* Phone BrowserTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -173,6 +179,7 @@
 				TargetAttributes = {
 					B0B4DA2B19D2F2160057010D = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = USKYH3LF56;
 					};
 					B0B4DA3D19D2F2170057010D = {
 						CreatedOnToolsVersion = 6.0;
@@ -180,7 +187,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B0B4DA2719D2F2160057010D /* Build configuration list for PBXProject "Iphone5sBrowser" */;
+			buildConfigurationList = B0B4DA2719D2F2160057010D /* Build configuration list for PBXProject "Phone Browser" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -193,8 +200,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B0B4DA2B19D2F2160057010D /* Iphone5sBrowser */,
-				B0B4DA3D19D2F2170057010D /* Iphone5sBrowserTests */,
+				B0B4DA2B19D2F2160057010D /* Phone Browser */,
+				B0B4DA3D19D2F2170057010D /* Phone BrowserTests */,
 			);
 		};
 /* End PBXProject section */
@@ -204,12 +211,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0B4DA5919D31A400057010D /* iphone-black.png in Resources */,
-				B0B4DA5519D311370057010D /* iphone-wireframe.png in Resources */,
 				B0B4DA5119D30F340057010D /* iphone-nobg.png in Resources */,
-				B0B4DA5619D311370057010D /* iphone-white.png in Resources */,
 				B0B4DA3719D2F2170057010D /* Main.storyboard in Resources */,
+				B01F650719D5B7BC00B2BD3C /* phone-browser-logo.png in Resources */,
+				B04EBE7419D446F100488024 /* iphone-white.png in Resources */,
+				B04EBE7319D446F100488024 /* iphone-black.png in Resources */,
 				B0B4DA4F19D30B600057010D /* iphone.png in Resources */,
+				B04EBE7519D446F100488024 /* iphone-wireframe.png in Resources */,
 				B0B4DA3919D2F2170057010D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0B4DA3419D2F2170057010D /* ViewController.swift in Sources */,
+				B0B4DA5B19D327940057010D /* LauncherController.swift in Sources */,
 				B0B4DA3219D2F2170057010D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,7 +255,7 @@
 /* Begin PBXTargetDependency section */
 		B0B4DA4019D2F2170057010D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B0B4DA2B19D2F2160057010D /* Iphone5sBrowser */;
+			target = B0B4DA2B19D2F2160057010D /* Phone Browser */;
 			targetProxy = B0B4DA3F19D2F2170057010D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -345,10 +354,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Iphone5sBrowser/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Phone Browser";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -358,10 +370,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Iphone5sBrowser/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Phone Browser";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
@@ -380,7 +395,7 @@
 				);
 				INFOPLIST_FILE = Iphone5sBrowserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Phone BrowserTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -395,7 +410,7 @@
 				);
 				INFOPLIST_FILE = Iphone5sBrowserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Phone BrowserTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
@@ -403,7 +418,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B0B4DA2719D2F2160057010D /* Build configuration list for PBXProject "Iphone5sBrowser" */ = {
+		B0B4DA2719D2F2160057010D /* Build configuration list for PBXProject "Phone Browser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0B4DA4619D2F2170057010D /* Debug */,
@@ -412,21 +427,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0B4DA4819D2F2170057010D /* Build configuration list for PBXNativeTarget "Iphone5sBrowser" */ = {
+		B0B4DA4819D2F2170057010D /* Build configuration list for PBXNativeTarget "Phone Browser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0B4DA4919D2F2170057010D /* Debug */,
 				B0B4DA4A19D2F2170057010D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		B0B4DA4B19D2F2170057010D /* Build configuration list for PBXNativeTarget "Iphone5sBrowserTests" */ = {
+		B0B4DA4B19D2F2170057010D /* Build configuration list for PBXNativeTarget "Phone BrowserTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0B4DA4C19D2F2170057010D /* Debug */,
 				B0B4DA4D19D2F2170057010D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

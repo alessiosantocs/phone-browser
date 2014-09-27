@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Iphone5sBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Phone_Browser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -54,15 +55,52 @@
                                     <action selector="changePhoneTheme:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Uww-yV-1qJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwu-ns-Rww">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="P1x-eL-vqm"/>
+                                    <constraint firstAttribute="width" constant="99" id="pHd-Ea-pXN"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="P1x-eL-vqm"/>
+                                        <exclude reference="pHd-Ea-pXN"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="P1x-eL-vqm"/>
+                                        <include reference="pHd-Ea-pXN"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="openLauncher:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QRq-nG-Zp9"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone-browser-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="yCU-Yt-meR">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="4BV-Pg-eIh" secondAttribute="centerY" id="Lrh-tK-fTa"/>
-                            <constraint firstAttribute="centerX" secondItem="TQz-Uq-qDX" secondAttribute="centerX" id="Ueo-mu-qeg"/>
+                            <constraint firstItem="hwu-ns-Rww" firstAttribute="top" secondItem="4BV-Pg-eIh" secondAttribute="bottom" constant="28" id="U9f-I7-M9X">
+                                <variation key="heightClass=regular" constant="10"/>
+                            </constraint>
                             <constraint firstAttribute="centerY" secondItem="kmM-CB-A5j" secondAttribute="centerY" id="Vxe-iM-cDy"/>
-                            <constraint firstItem="TQz-Uq-qDX" firstAttribute="top" secondItem="4BV-Pg-eIh" secondAttribute="bottom" constant="110" id="bMb-dp-18N"/>
+                            <constraint firstItem="TQz-Uq-qDX" firstAttribute="top" secondItem="4BV-Pg-eIh" secondAttribute="bottom" constant="110" id="bMb-dp-18N">
+                                <variation key="heightClass=regular" constant="110"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="TQz-Uq-qDX" secondAttribute="centerX" id="hlr-1z-bmh"/>
+                            <constraint firstAttribute="centerX" secondItem="yCU-Yt-meR" secondAttribute="centerX" id="iCg-xI-vmL"/>
                             <constraint firstAttribute="centerX" secondItem="kmM-CB-A5j" secondAttribute="centerX" id="l8R-hN-Haz"/>
+                            <constraint firstItem="4BV-Pg-eIh" firstAttribute="top" secondItem="yCU-Yt-meR" secondAttribute="bottom" constant="96" id="oSu-FD-KGo"/>
+                            <constraint firstAttribute="centerX" secondItem="hwu-ns-Rww" secondAttribute="centerX" id="rmc-Dd-7L5"/>
                             <constraint firstAttribute="centerX" secondItem="4BV-Pg-eIh" secondAttribute="centerX" id="tZu-GH-dJB"/>
                         </constraints>
                         <variation key="default">
@@ -70,14 +108,20 @@
                                 <exclude reference="kmM-CB-A5j"/>
                                 <exclude reference="4BV-Pg-eIh"/>
                                 <exclude reference="TQz-Uq-qDX"/>
+                                <exclude reference="hwu-ns-Rww"/>
+                                <exclude reference="yCU-Yt-meR"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="iCg-xI-vmL"/>
                                 <exclude reference="Vxe-iM-cDy"/>
                                 <exclude reference="l8R-hN-Haz"/>
                                 <exclude reference="Lrh-tK-fTa"/>
+                                <exclude reference="oSu-FD-KGo"/>
                                 <exclude reference="tZu-GH-dJB"/>
-                                <exclude reference="Ueo-mu-qeg"/>
+                                <exclude reference="U9f-I7-M9X"/>
+                                <exclude reference="rmc-Dd-7L5"/>
                                 <exclude reference="bMb-dp-18N"/>
+                                <exclude reference="hlr-1z-bmh"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -85,28 +129,85 @@
                                 <include reference="kmM-CB-A5j"/>
                                 <include reference="4BV-Pg-eIh"/>
                                 <include reference="TQz-Uq-qDX"/>
+                                <include reference="hwu-ns-Rww"/>
+                                <include reference="yCU-Yt-meR"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="iCg-xI-vmL"/>
                                 <include reference="Vxe-iM-cDy"/>
                                 <include reference="l8R-hN-Haz"/>
                                 <include reference="Lrh-tK-fTa"/>
+                                <include reference="oSu-FD-KGo"/>
                                 <include reference="tZu-GH-dJB"/>
-                                <include reference="Ueo-mu-qeg"/>
+                                <include reference="U9f-I7-M9X"/>
+                                <include reference="rmc-Dd-7L5"/>
                                 <include reference="bMb-dp-18N"/>
+                                <include reference="hlr-1z-bmh"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="kmM-CB-A5j" id="CzV-zj-Fnq"/>
                         <outlet property="webView" destination="4BV-Pg-eIh" id="uwM-kp-Veo"/>
+                        <segue destination="acO-V8-giN" kind="presentation" identifier="openLauncher" modalPresentationStyle="formSheet" id="d4X-JU-Cqh"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" userLabel="openLauncher" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="142" y="123"/>
+            <point key="canvasLocation" x="-133" y="120"/>
+        </scene>
+        <!--Open a saved web app-->
+        <scene sceneID="u2a-Pz-1YH">
+            <objects>
+                <tableViewController id="c2A-rX-Lsv" customClass="LauncherViewController" customModule="Phone_Browser" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rKj-TH-N0O">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aQh-UJ-fup">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aQh-UJ-fup" id="L56-dd-ETw">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="c2A-rX-Lsv" id="8ar-Yg-iCx"/>
+                            <outlet property="delegate" destination="c2A-rX-Lsv" id="4Nd-rb-E0G"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Open a saved web app" id="vKn-Pf-4zX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="aeA-Js-M7d">
+                            <connections>
+                                <action selector="cancelActionButton:" destination="c2A-rX-Lsv" id="a1H-y1-zmD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nzC-Ds-Tsg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1344" y="120"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YnZ-o3-J8L">
+            <objects>
+                <navigationController id="acO-V8-giN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JmZ-TU-smo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="c2A-rX-Lsv" kind="relationship" relationship="rootViewController" id="QSJ-qZ-vzf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7FZ-T8-iRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="607" y="120"/>
         </scene>
     </scenes>
     <resources>
         <image name="iphone-white.png" width="601" height="800"/>
+        <image name="phone-browser-logo.png" width="601" height="64"/>
     </resources>
 </document>

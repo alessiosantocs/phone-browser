@@ -19,7 +19,7 @@ class ViewController: UIViewController, UIWebViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let secretagent = "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X; en-us) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A465 Safari/9537.53";
+        let secretagent = "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_6 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B651 Safari/9537.53";
         let dictionary = NSDictionary(object: secretagent, forKey: "UserAgent")
         
         NSUserDefaults.standardUserDefaults().registerDefaults(dictionary)
@@ -32,9 +32,7 @@ class ViewController: UIViewController, UIWebViewDelegate{
         webView.scrollView.bounces = false;
         
         // Do any additional setup after loading the view, typically from a nib.
-//        let stringUrl = "https://marvelapp.com/331b3i"
         let stringUrl = "https://marvelapp.com/21ffe1"
-//        let stringUrl = "http://198.101.226.110/snaphealth-prototype/app.html"
         
         let url = NSURL.URLWithString(stringUrl)
         let request = NSURLRequest(URL: url)
@@ -49,7 +47,12 @@ class ViewController: UIViewController, UIWebViewDelegate{
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func openLauncher(sender: AnyObject) {
+        performSegueWithIdentifier("openLauncher", sender: self)
+    }
+    
     @IBAction func changePhoneTheme(sender: AnyObject) {
+        
         chosenImageIndex += 1
         var randomImagePath = imageArray[chosenImageIndex]
         var image = UIImage(named: randomImagePath)
@@ -66,9 +69,34 @@ class ViewController: UIViewController, UIWebViewDelegate{
         "var meta = document.createElement('meta'); " +
         "meta.setAttribute( 'name', 'viewport' ); " +
         "meta.setAttribute( 'content', 'width = 270, initial-scale = 1.0, user-scalable = no' ); " +
-        "document.getElementsByTagName('head')[0].appendChild(meta)"
+        "document.getElementsByTagName('head')[0].appendChild(meta);"
+
         
         webView.stringByEvaluatingJavaScriptFromString(js)
+    }
+    
+    func loadWebPage(url: String) {
+        println("loading web page")
+        let nsUrl = NSURL.URLWithString(url)
+        let request = NSURLRequest(URL: nsUrl)
+        
+        webView.loadRequest(request)
+
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        // When preparing for the segue, have viewController1 provide a closure for
+        // onDataAvailable
+        if let navigationController = segue.destinationViewController as? UINavigationController {
+            if let viewController = navigationController.viewControllers[0] as? LauncherViewController{
+                viewController.onDataAvailable = {[weak self]
+                    (data) in
+                    if let weakSelf = self {
+                        weakSelf.loadWebPage(data)
+                    }
+                }
+            }
+            
+        }
     }
 }
 

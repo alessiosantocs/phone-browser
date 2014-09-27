@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B0B4DA2B19D2F2160057010D"
-               BuildableName = "Iphone5sBrowser.app"
-               BlueprintName = "Iphone5sBrowser"
-               ReferencedContainer = "container:Iphone5sBrowser.xcodeproj">
+               BuildableName = "Phone Browser.app"
+               BlueprintName = "Phone Browser"
+               ReferencedContainer = "container:Phone Browser.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B0B4DA3D19D2F2170057010D"
-               BuildableName = "Iphone5sBrowserTests.xctest"
-               BlueprintName = "Iphone5sBrowserTests"
-               ReferencedContainer = "container:Iphone5sBrowser.xcodeproj">
+               BuildableName = "Phone BrowserTests.xctest"
+               BlueprintName = "Phone BrowserTests"
+               ReferencedContainer = "container:Phone Browser.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B0B4DA2B19D2F2160057010D"
-            BuildableName = "Iphone5sBrowser.app"
-            BlueprintName = "Iphone5sBrowser"
-            ReferencedContainer = "container:Iphone5sBrowser.xcodeproj">
+            BuildableName = "Phone Browser.app"
+            BlueprintName = "Phone Browser"
+            ReferencedContainer = "container:Phone Browser.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B0B4DA2B19D2F2160057010D"
-            BuildableName = "Iphone5sBrowser.app"
-            BlueprintName = "Iphone5sBrowser"
-            ReferencedContainer = "container:Iphone5sBrowser.xcodeproj">
+            BuildableName = "Phone Browser.app"
+            BlueprintName = "Phone Browser"
+            ReferencedContainer = "container:Phone Browser.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B0B4DA2B19D2F2160057010D"
-            BuildableName = "Iphone5sBrowser.app"
-            BlueprintName = "Iphone5sBrowser"
-            ReferencedContainer = "container:Iphone5sBrowser.xcodeproj">
+            BuildableName = "Phone Browser.app"
+            BlueprintName = "Phone Browser"
+            ReferencedContainer = "container:Phone Browser.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
