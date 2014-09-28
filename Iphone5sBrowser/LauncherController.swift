@@ -33,8 +33,10 @@ class LauncherViewController: UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        println("loaded")
-        
+        var savedWebsite: SavedWebsite = SavedWebsite.create() as SavedWebsite
+        savedWebsite.url = "ciaosfs"
+//        savedWebsite.save()
+//        
         var mainScreenSize = UIScreen.mainScreen()
 //        toolbar.layer.bounds.width = 200
         

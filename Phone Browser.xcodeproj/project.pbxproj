@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AF3A8857DC578C27A8A65AC /* libPods-Phone Browser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F73E75685AB0AECDD1B5CF /* libPods-Phone Browser.a */; };
 		B01F650719D5B7BC00B2BD3C /* phone-browser-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F650619D5B7BC00B2BD3C /* phone-browser-logo.png */; };
+		B031C16F19D769060082BD71 /* SavedWebsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = B031C16E19D769060082BD71 /* SavedWebsite.swift */; };
+		B031C17619D7730E0082BD71 /* Phone-Browser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B031C17419D7730E0082BD71 /* Phone-Browser.xcdatamodeld */; };
 		B04EBE7319D446F100488024 /* iphone-black.png in Resources */ = {isa = PBXBuildFile; fileRef = B04EBE7019D446F100488024 /* iphone-black.png */; };
 		B04EBE7419D446F100488024 /* iphone-white.png in Resources */ = {isa = PBXBuildFile; fileRef = B04EBE7119D446F100488024 /* iphone-white.png */; };
 		B04EBE7519D446F100488024 /* iphone-wireframe.png in Resources */ = {isa = PBXBuildFile; fileRef = B04EBE7219D446F100488024 /* iphone-wireframe.png */; };
@@ -32,7 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20F73E75685AB0AECDD1B5CF /* libPods-Phone Browser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Phone Browser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B01F650619D5B7BC00B2BD3C /* phone-browser-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone-browser-logo.png"; sourceTree = "<group>"; };
+		B031C16E19D769060082BD71 /* SavedWebsite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedWebsite.swift; sourceTree = "<group>"; };
+		B031C17019D76B340082BD71 /* Phone Browser-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Phone Browser-Bridging-Header.h"; sourceTree = "<group>"; };
+		B031C17519D7730E0082BD71 /* Phone-Browser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Phone-Browser.xcdatamodel"; sourceTree = "<group>"; };
 		B04EBE7019D446F100488024 /* iphone-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-black.png"; sourceTree = "<group>"; };
 		B04EBE7119D446F100488024 /* iphone-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-white.png"; sourceTree = "<group>"; };
 		B04EBE7219D446F100488024 /* iphone-wireframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-wireframe.png"; sourceTree = "<group>"; };
@@ -48,6 +55,8 @@
 		B0B4DA4E19D30B600057010D /* iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone.png; sourceTree = "<group>"; };
 		B0B4DA5019D30F340057010D /* iphone-nobg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-nobg.png"; sourceTree = "<group>"; };
 		B0B4DA5A19D327940057010D /* LauncherController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LauncherController.swift; sourceTree = "<group>"; };
+		B168C137C85ACFFA3A51C50A /* Pods-Phone Browser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phone Browser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Phone Browser/Pods-Phone Browser.debug.xcconfig"; sourceTree = "<group>"; };
+		C0D7ECBC626033AD87CEA0F4 /* Pods-Phone Browser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phone Browser.release.xcconfig"; path = "Pods/Target Support Files/Pods-Phone Browser/Pods-Phone Browser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AF3A8857DC578C27A8A65AC /* libPods-Phone Browser.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +78,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D7D3583E4F60A53A325C51E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20F73E75685AB0AECDD1B5CF /* libPods-Phone Browser.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F1B1BBE93AC96B26EE24B02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B168C137C85ACFFA3A51C50A /* Pods-Phone Browser.debug.xcconfig */,
+				C0D7ECBC626033AD87CEA0F4 /* Pods-Phone Browser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B031C17319D76C710082BD71 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B031C16E19D769060082BD71 /* SavedWebsite.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		B0B4DA2319D2F2160057010D = {
 			isa = PBXGroup;
 			children = (
 				B0B4DA2E19D2F2170057010D /* Iphone5sBrowser */,
 				B0B4DA4119D2F2170057010D /* Iphone5sBrowserTests */,
 				B0B4DA2D19D2F2170057010D /* Products */,
+				5F1B1BBE93AC96B26EE24B02 /* Pods */,
+				4D7D3583E4F60A53A325C51E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,12 +126,15 @@
 		B0B4DA2E19D2F2170057010D /* Iphone5sBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				B031C17419D7730E0082BD71 /* Phone-Browser.xcdatamodeld */,
+				B031C17319D76C710082BD71 /* Models */,
 				B0B4DA3119D2F2170057010D /* AppDelegate.swift */,
 				B0B4DA3319D2F2170057010D /* ViewController.swift */,
 				B0B4DA5A19D327940057010D /* LauncherController.swift */,
 				B0B4DA3519D2F2170057010D /* Main.storyboard */,
 				B0B4DA3819D2F2170057010D /* Images.xcassets */,
 				B0B4DA2F19D2F2170057010D /* Supporting Files */,
+				B031C17019D76B340082BD71 /* Phone Browser-Bridging-Header.h */,
 			);
 			path = Iphone5sBrowser;
 			sourceTree = "<group>";
@@ -137,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0B4DA4819D2F2170057010D /* Build configuration list for PBXNativeTarget "Phone Browser" */;
 			buildPhases = (
+				7A7A9467CDBBCFE8E1858365 /* Check Pods Manifest.lock */,
 				B0B4DA2819D2F2160057010D /* Sources */,
 				B0B4DA2919D2F2160057010D /* Frameworks */,
 				B0B4DA2A19D2F2160057010D /* Resources */,
+				09C9D0B2DD07199190D52866 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +273,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09C9D0B2DD07199190D52866 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Phone Browser/Pods-Phone Browser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A7A9467CDBBCFE8E1858365 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B0B4DA2819D2F2160057010D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -238,7 +313,9 @@
 			files = (
 				B0B4DA3419D2F2170057010D /* ViewController.swift in Sources */,
 				B0B4DA5B19D327940057010D /* LauncherController.swift in Sources */,
+				B031C17619D7730E0082BD71 /* Phone-Browser.xcdatamodeld in Sources */,
 				B0B4DA3219D2F2170057010D /* AppDelegate.swift in Sources */,
+				B031C16F19D769060082BD71 /* SavedWebsite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,9 +428,11 @@
 		};
 		B0B4DA4919D2F2170057010D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B168C137C85ACFFA3A51C50A /* Pods-Phone Browser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Iphone5sBrowser/Info.plist;
@@ -361,15 +440,19 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Phone Browser";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/alessiosanto/projects/apps/phone-browser/Iphone5sBrowser/Phone Browser-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		B0B4DA4A19D2F2170057010D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0D7ECBC626033AD87CEA0F4 /* Pods-Phone Browser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Iphone5sBrowser/Info.plist;
@@ -377,6 +460,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Phone Browser";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/alessiosanto/projects/apps/phone-browser/Iphone5sBrowser/Phone Browser-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
@@ -446,6 +530,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B031C17419D7730E0082BD71 /* Phone-Browser.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B031C17519D7730E0082BD71 /* Phone-Browser.xcdatamodel */,
+			);
+			currentVersion = B031C17519D7730E0082BD71 /* Phone-Browser.xcdatamodel */;
+			name = "Phone-Browser.xcdatamodeld";
+			path = "../Phone-browser.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B0B4DA2419D2F2160057010D /* Project object */;
 }
