@@ -1,0 +1,1 @@
+PODS_PHONE_BROWSER_TOUCHPOSE_OTHER_LDFLAGS = -framework "QuartzCore"

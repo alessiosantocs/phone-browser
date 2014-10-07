@@ -1,0 +1,10 @@
+PODS:
+  - Touchpose (1.2.0)
+
+DEPENDENCIES:
+  - Touchpose
+
+SPEC CHECKSUMS:
+  Touchpose: a03b3143c6d1d9d20a881313e6056f6e223596f6
+
+COCOAPODS: 0.34.1
