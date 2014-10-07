@@ -26,8 +26,7 @@ class LauncherViewController: UITableViewController{
     let websitesArray = [
         ("Cinnamon Onboarding", "https://marvelapp.com/331b3i"),
         ("Cinnamon Prototype", "https://marvelapp.com/21ffe1"),
-        ("Cinnamon Plant growth", "http://198.101.226.110/snaphealth-prototype/app.html"),
-        ("Magnetiq", "http://alessiosantocs.github.io/Magnetiq")
+        ("Cinnamon Plant growth", "http://198.101.226.110/snaphealth-prototype/app.html")
     ]
     
     override func viewDidLoad() {
