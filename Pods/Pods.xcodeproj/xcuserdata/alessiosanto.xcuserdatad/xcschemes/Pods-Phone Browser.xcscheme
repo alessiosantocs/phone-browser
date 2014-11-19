@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "654E599112670D4CC66BFF8C"
+               BlueprintIdentifier = "0B39787816B9F1F3963E9CAB"
                BuildableName = "libPods-Phone Browser.a"
                BlueprintName = "Pods-Phone Browser"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -34,8 +34,8 @@ class ViewController: UIViewController, UIWebViewDelegate{
         // Do any additional setup after loading the view, typically from a nib.
         let stringUrl = "https://marvelapp.com/21ffe1"
         
-        let url = NSURL.URLWithString(stringUrl)
-        let request = NSURLRequest(URL: url)
+        let url = NSURL(string: stringUrl)
+        let request = NSURLRequest(URL: url!)
         
         webView.loadRequest(request)
         
@@ -77,13 +77,13 @@ class ViewController: UIViewController, UIWebViewDelegate{
     
     func loadWebPage(url: String) {
         println("loading web page")
-        let nsUrl = NSURL.URLWithString(url)
-        let request = NSURLRequest(URL: nsUrl)
+        let nsUrl = NSURL(string: url)
+        let request = NSURLRequest(URL: nsUrl!)
         
         webView.loadRequest(request)
 
     }
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         // When preparing for the segue, have viewController1 provide a closure for
         // onDataAvailable
         if let navigationController = segue.destinationViewController as? UINavigationController {

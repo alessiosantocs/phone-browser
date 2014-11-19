@@ -69,16 +69,15 @@ class LauncherViewController: UITableViewController{
         // Dispose of any resources that can be recreated.
     }
     
-    override func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return websitesArray.count
     }
-
     
-    override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
         
         cell.textLabel.text = websitesArray[indexPath.row].0 + " - " +  websitesArray[indexPath.row].1
@@ -86,7 +85,7 @@ class LauncherViewController: UITableViewController{
         return cell
     }
     
-    override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var chosenWebsite = websitesArray[indexPath.row].1
         sendData(chosenWebsite)
         dismissViewControllerAnimated(true, completion: nil)
