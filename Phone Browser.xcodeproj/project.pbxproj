@@ -13,6 +13,9 @@
 		B04EBE7319D446F100488024 /* iphone-black.png in Resources */ = {isa = PBXBuildFile; fileRef = B04EBE7019D446F100488024 /* iphone-black.png */; };
 		B04EBE7419D446F100488024 /* iphone-white.png in Resources */ = {isa = PBXBuildFile; fileRef = B04EBE7119D446F100488024 /* iphone-white.png */; };
 		B04EBE7519D446F100488024 /* iphone-wireframe.png in Resources */ = {isa = PBXBuildFile; fileRef = B04EBE7219D446F100488024 /* iphone-wireframe.png */; };
+		B07685651A1CF99A00B9E466 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07685641A1CF99A00B9E466 /* CoreData.framework */; };
+		B076859A1A1CFBFE00B9E466 /* WebApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07685991A1CFBFE00B9E466 /* WebApplication.swift */; };
+		B076859D1A1CFEF300B9E466 /* PhoneB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B076859B1A1CFEF300B9E466 /* PhoneB.xcdatamodeld */; };
 		B0B4DA3219D2F2170057010D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4DA3119D2F2170057010D /* AppDelegate.swift */; };
 		B0B4DA3419D2F2170057010D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4DA3319D2F2170057010D /* ViewController.swift */; };
 		B0B4DA3719D2F2170057010D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B4DA3519D2F2170057010D /* Main.storyboard */; };
@@ -43,6 +46,9 @@
 		B04EBE7019D446F100488024 /* iphone-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-black.png"; sourceTree = "<group>"; };
 		B04EBE7119D446F100488024 /* iphone-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-white.png"; sourceTree = "<group>"; };
 		B04EBE7219D446F100488024 /* iphone-wireframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-wireframe.png"; sourceTree = "<group>"; };
+		B07685641A1CF99A00B9E466 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B07685991A1CFBFE00B9E466 /* WebApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebApplication.swift; sourceTree = "<group>"; };
+		B076859C1A1CFEF300B9E466 /* PhoneB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhoneB.xcdatamodel; sourceTree = "<group>"; };
 		B0B4DA2C19D2F2170057010D /* Phone Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phone Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B4DA3019D2F2170057010D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0B4DA3119D2F2170057010D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07685651A1CF99A00B9E466 /* CoreData.framework in Frameworks */,
 				05249548C3C95DB884A577C4 /* libPods-Phone Browser.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +95,7 @@
 		A2AAA304E7EE9FF4E04BAD45 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B07685641A1CF99A00B9E466 /* CoreData.framework */,
 				9D15A9FC83D7B779BFB37A46 /* libPods-Phone Browser.a */,
 			);
 			name = Frameworks;
@@ -116,6 +124,8 @@
 		B0B4DA2E19D2F2170057010D /* Iphone5sBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				B076859B1A1CFEF300B9E466 /* PhoneB.xcdatamodeld */,
+				B07685991A1CFBFE00B9E466 /* WebApplication.swift */,
 				B0B4DA3119D2F2170057010D /* AppDelegate.swift */,
 				B0B4DA3319D2F2170057010D /* ViewController.swift */,
 				B0B4DA5A19D327940057010D /* LauncherController.swift */,
@@ -301,6 +311,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0B4DA3419D2F2170057010D /* ViewController.swift in Sources */,
+				B076859D1A1CFEF300B9E466 /* PhoneB.xcdatamodeld in Sources */,
+				B076859A1A1CFBFE00B9E466 /* WebApplication.swift in Sources */,
 				B0B4DA5B19D327940057010D /* LauncherController.swift in Sources */,
 				B006DECB19E0707700635CD5 /* main.swift.old in Sources */,
 				B0B4DA3219D2F2170057010D /* AppDelegate.swift in Sources */,
@@ -518,6 +530,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B076859B1A1CFEF300B9E466 /* PhoneB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B076859C1A1CFEF300B9E466 /* PhoneB.xcdatamodel */,
+			);
+			currentVersion = B076859C1A1CFEF300B9E466 /* PhoneB.xcdatamodel */;
+			path = PhoneB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B0B4DA2419D2F2160057010D /* Project object */;
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UIWebViewDelegate{
                             
@@ -16,6 +17,8 @@ class ViewController: UIViewController, UIWebViewDelegate{
     var chosenImageIndex = 0
     let imageArray = ["iphone-wireframe.png", "iphone-black.png", "iphone-white.png"]
     
+    var currentWebApp: WebApplication = WebApplication()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,22 +27,20 @@ class ViewController: UIViewController, UIWebViewDelegate{
         
         NSUserDefaults.standardUserDefaults().registerDefaults(dictionary)
 
-        webView.scalesPageToFit = false
+        webView.scalesPageToFit = true
         
         webView.hidden = true
         
-        webView.scrollView.scrollEnabled = false;
-        webView.scrollView.bounces = false;
+//        webView.scrollView.scrollEnabled = false;
+//        webView.scrollView.bounces = false;
         
         // Do any additional setup after loading the view, typically from a nib.
-        let stringUrl = "https://marvelapp.com/21ffe1"
+        let stringUrl = "http://alessiosantocs.github.io/"
         
-        let url = NSURL(string: stringUrl)
-        let request = NSURLRequest(URL: url!)
-        
-        webView.loadRequest(request)
+        loadWebPage(stringUrl)
         
         webView.delegate = self
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,27 +63,45 @@ class ViewController: UIViewController, UIWebViewDelegate{
             chosenImageIndex = -1
         }
     }
+    
     func webViewDidFinishLoad(webView: UIWebView!) {
+        println("ViewController => webViewDidFinishLoad")
+        
+        
+        
         webView.hidden = false
         
         let js =
         "var meta = document.createElement('meta'); " +
         "meta.setAttribute( 'name', 'viewport' ); " +
-        "meta.setAttribute( 'content', 'width = 270, initial-scale = 1.0, user-scalable = no' ); " +
+        "meta.setAttribute( 'content', 'width = \(webView.frame.width), initial-scale = 0.8, user-scalable = no' ); " +
         "document.getElementsByTagName('head')[0].appendChild(meta);"
-
         
         webView.stringByEvaluatingJavaScriptFromString(js)
+        
+        if let pageTitle = webView?.stringByEvaluatingJavaScriptFromString("document.title;")?{
+            currentWebApp.title = pageTitle
+        }
+        
     }
     
+    
+    /// Loads the string url in input into the webview
     func loadWebPage(url: String) {
         println("loading web page")
         let nsUrl = NSURL(string: url)
         let request = NSURLRequest(URL: nsUrl!)
         
+        webView.hidden = true
+        
         webView.loadRequest(request)
 
     }
+    
+    func setCurrentWebApp(webApp: WebApplication){
+        
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         // When preparing for the segue, have viewController1 provide a closure for
         // onDataAvailable
@@ -91,12 +110,30 @@ class ViewController: UIViewController, UIWebViewDelegate{
                 viewController.onDataAvailable = {[weak self]
                     (data) in
                     if let weakSelf = self {
-                        weakSelf.loadWebPage(data)
+                        
+                        weakSelf.currentWebApp = data as WebApplication
+                        
+                        let webapp = weakSelf.currentWebApp as WebApplication
+                        
+                        weakSelf.loadWebPage(webapp.url)
+                        
                     }
                 }
             }
             
         }
     }
+    
+    
+    // MARK: - Core data
+    lazy var managedObjectContext : NSManagedObjectContext? = {
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        if let managedObjectContext = appDelegate.managedObjectContext {
+            return managedObjectContext
+        }
+        else {
+            return nil
+        }
+    }()
 }
 
